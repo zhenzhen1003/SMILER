@@ -40,10 +40,10 @@ For `src-xxx.txt` and `tgt-xxx.txt`, you can execute `create_dataset.py` to gene
 #### 2.Setting parameters
 Before model training, some parameters need to be set, such as vocabulary size, length of generated sentences, etc.
 In `train.py`:
-`--from_vocab_size` and `--to_vocab_size`：You can choose to set it in a file or specify it in a command line argument
-'--beam_size':Set the number of sentences to generate output for an input
+* `--from_vocab_size` and `--to_vocab_size`：You can choose to set it in a file or specify it in a command line argument
+* '--beam_size':Set the number of sentences to generate output for an input
 
 In `model.py`:
-`max_story_length`:The longest length of the sum of the input and output sentences
-`max_length`:The maximum length of the sentence entered
-`max_single_length`:The maximum length of the sentence output
+* `max_story_length`:The longest length of the sum of the input and output sentences
+* `max_length`:The maximum length of the sentence entered
+* `max_single_length`:The maximum length of the sentence output
